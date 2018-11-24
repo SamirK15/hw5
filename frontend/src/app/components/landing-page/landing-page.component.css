@@ -1,0 +1,63 @@
+.navbar{
+    background: #232a34;
+    font-family: 'Montserrat'; font-size: 22px; color:#0facf3;
+    border: 0;
+    padding-bottom:5px;
+}  
+
+.navbar-nav li a:hover{
+    color:#ffffff !important;
+    border-bottom: 2px solid #0facf3;
+    text-decoration: none; 
+    font-weight: bold;
+    /* background-color: transparent !important; */
+    /* color: #0facf3 !important; */
+}
+
+.navbar-nav li a:visited{
+    color: #ffffff !important;
+}
+.jumbotron{
+    color: white; 
+    background-image: url('hero_img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.jumbotron h1{
+    text-align: center;
+    text-shadow: 1px 1px #333;
+    padding-top: 12%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.bgimage h1{
+    color: #ffffff;
+    text-shadow: 2px 2px #333; 
+}
+
+.container-fluid h1{
+    font-family: 'Roboto'; font-weight: bold;
+    text-align: left;
+    padding-top:15%;
+    padding-right: 10%;
+}
+
+.container-fluid p{
+    font-family: 'Roboto';font-size: 18px;
+    text-align: left;
+    padding-right: 10%;
+}
+
+.modal-content h4{
+    font-family: 'Roboto'; font-size: 20px;
+    text-align: center;
+}
+
+.modal-body{
+    font-family: 'Roboto'; font-size: 16px;
+}
+
