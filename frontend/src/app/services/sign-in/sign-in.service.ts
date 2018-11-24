@@ -10,7 +10,7 @@ export class SignInService {
 
   authenticateCredentials() {
     return new Promise((resolve, reject) => {
-      this.http.get('http://localhost:3001/').subscribe(data => {
+      this.http.get('https://samirkazi51.lib.id/hw5@dev/').subscribe(data => {
         resolve(data);
       });
     });

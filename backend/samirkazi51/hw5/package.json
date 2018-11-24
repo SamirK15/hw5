@@ -1,0 +1,13 @@
+{
+  "name": "samirkazi51/hw5",
+  "version": "0.0.3",
+  "author": "samirkazi51",
+  "stdlib": {
+    "name": "samirkazi51/hw5",
+    "timeout": 10000
+  },
+  "dependencies": {
+    "firebase-admin": "^6.2.0",
+    "firebase": "^5.5.9"
+  }
+}

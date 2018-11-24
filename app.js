@@ -3,6 +3,9 @@ const firebase = require('firebase');
 
 
 
+
+
+
 //Setting constants
 const app = express()
 const port = process.env.port || 3001
@@ -26,6 +29,16 @@ firebase.initializeApp({
   storageBucket: "hackwestern5-b0d71.appspot.com",
   messagingSenderId: "754810605528"
   });
+
+email = "abc123@gmail.com"
+password = "pass123"
+firebase.auth().createUserWithEmailAndPassword(email, password).then(function(res){
+    console.log(res)
+    }).catch(function(error) {
+      var errorCode = error.code
+      var errorMessage = error.message
+      })
+
 
 //getting access to the db
 var db = firebase.database();
