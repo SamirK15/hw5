@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
@@ -10,7 +11,7 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { ToDoComponent } from './components/to-do/to-do.component';
 
-import { ToDoService } from './services/to-do/to-do.service';
+import { TaskService } from './services/task/task.service';
 
 @NgModule({
   declarations: [
@@ -24,10 +25,11 @@ import { ToDoService } from './services/to-do/to-do.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
-    ToDoService
+    TaskService
   ],
   bootstrap: [AppComponent]
 })

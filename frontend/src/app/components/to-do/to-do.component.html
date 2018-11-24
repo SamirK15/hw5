@@ -3,34 +3,34 @@
   <div class="row">
 
       <div class="col">
-          <h1>Unassigned</h1>
+          <h2>Unassigned</h2>
           <ul>
             <li *ngFor="let unassigned of unassignedTasks">
-
+              <p>{{unassigned}}</p>
             </li>
           </ul>
       </div>
       <div class="col">
-        <h1>Assigned</h1>
+        <h2>Assigned</h2>
         <ul>
-          <li *ngFor="let unassigned of unassignedTasks">
-
+          <li *ngFor="let assigned of assignedTasks">
+            <p>{{assigned}}</p>
           </li>
         </ul>
       </div>
       <div class="col">
-        <h1>In Progress</h1>
+        <h2>In Progress</h2>
         <ul>
-          <li *ngFor="let unassigned of unassignedTasks">
-
+          <li *ngFor="let inProgress of inProgressTasks">
+            <p>{{inProgress}}</p>
           </li>
         </ul>
       </div>
       <div class="col">
-        <h1>Done</h1>
+        <h2>Done</h2>
         <ul>
-          <li *ngFor="let unassigned of unassignedTasks">
-
+          <li *ngFor="let done of doneTasks">
+            <p>{{done}}</p>
           </li>
         </ul>
       </div>
