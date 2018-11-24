@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/SamirK15/hw5#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "firebase": "^5.5.9",
+    "firebaseui": "^3.4.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.4"
