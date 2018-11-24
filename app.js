@@ -10,6 +10,13 @@ const port = process.env.port || 3001
 //using express paser
 app.use(express.json())
 
+app.use(function (request, response, next) {
+  response.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
+  response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  response.header('Access-Control-Allow-Methods', 'POST, PATCH, GET, PUT, DELETE, OPTIONS');
+  next();
+});
+
 
 firebase.initializeApp({
   apiKey: "AIzaSyDIm5IL6HBfzKfYF3pz4-PPkgGGE5WeEmw",
@@ -29,9 +36,7 @@ var db = firebase.database();
 //GET
 app.get('/', function (req, res) {
     console.log("Get Request");
-    res.send("Get Request");
-    db.ref('/TestMessages').set({TestMessage: 'GET Request'});
-
+    res.send({get: "Get Request"})
   });
 
 app.put('/', function (req, res) {

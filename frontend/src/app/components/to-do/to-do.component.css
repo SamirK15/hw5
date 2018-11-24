@@ -1,5 +1,9 @@
-.col {
-    border-style: solid;
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
 }
 
 ul {
@@ -8,5 +12,9 @@ ul {
 }
 
 li {
+    border-style: solid;
+}
+
+.col {
     border-style: solid;
 }
