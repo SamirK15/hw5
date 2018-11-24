@@ -1,0 +1,17 @@
+.navbar{
+    background: #232a34;
+    font-family: 'Montserrat'; font-size: 22px; color:#0facf3;
+    border: 0;
+    padding-bottom:5px;
+}  
+
+.navbar-nav li a:hover{
+    color:#ffffff !important;
+    border-bottom: 2px solid #0facf3;
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.navbar-nav li a:visited{
+    color: #ffffff !important;
+}
