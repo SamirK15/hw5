@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/SamirK15/hw5/issues"
   },
-  "homepage": "https://github.com/SamirK15/hw5#readme"
+  "homepage": "https://github.com/SamirK15/hw5#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
