@@ -3,6 +3,9 @@
     font-family: 'Montserrat'; font-size: 22px; color:#0facf3;
     border: 0;
     padding-bottom:5px;
+    border-bottom: 0px solid;
+    background-size: 5px;
+  overflow: hidden;
 }  
 
 .navbar-nav li a:hover{
@@ -10,6 +13,11 @@
     border-bottom: 2px solid #0facf3;
     text-decoration: none; 
     font-weight: bold;
+
+}
+.navbar-nav header a{
+  font-size: large;
+
 }
 
 .navbar-nav li a:visited{
