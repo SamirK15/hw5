@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { SignInService } from '../../services/sign-in/sign-in.service';
+
 @Component({
   selector: 'app-sign-in',
   templateUrl: './sign-in.component.html',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignInComponent implements OnInit {
 
-  constructor() { }
+  constructor(private signInService: SignInService) {
+    this.signInService.authenticateCredentials().then((res) => {
+      console.log(res);
+    });
+  }
 
   ngOnInit() {
   }
