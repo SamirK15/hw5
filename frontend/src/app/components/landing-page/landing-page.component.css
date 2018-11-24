@@ -10,8 +10,6 @@
     border-bottom: 2px solid #0facf3;
     text-decoration: none; 
     font-weight: bold;
-    /* background-color: transparent !important; */
-    /* color: #0facf3 !important; */
 }
 
 .navbar-nav li a:visited{
@@ -19,7 +17,7 @@
 }
 .jumbotron{
     color: white; 
-    background-image: url('hero_img.jpg');
+    background-image: url('../../../assets/hero_img.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
