@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
-import { SignInService } from '../../services/sign-in/sign-in.service';
+import { UserAuthenticationService } from '../../services/user-authentication/user-authentication.service';
 
 @Component({
   selector: 'app-sign-in',
@@ -9,13 +10,17 @@ import { SignInService } from '../../services/sign-in/sign-in.service';
 })
 export class SignInComponent implements OnInit {
 
-  constructor(private signInService: SignInService) {
-    this.signInService.authenticateCredentials().then((res) => {
-      console.log(res);
-    });
+  constructor(private router: Router, private userAuthenticationService: UserAuthenticationService) {
+
   }
 
   ngOnInit() {
+  }
+
+  signInOnClick(email, password) {
+    this.userAuthenticationService.authenticateCredentials(email, password).then(res => {
+      this.router.navigateByUrl("/home-page");
+    });
   }
 
 }

@@ -11,7 +11,8 @@ export const environment = {
     projectId: "hackwestern5-b0d71",
     storageBucket: "hackwestern5-b0d71.appspot.com",
     messagingSenderId: "754810605528"
-    }
+    },
+    stdlib_url: "https://samirkazi51.lib.id/hw5@dev/"
 };
 
 /*

@@ -6,21 +6,21 @@ import { environment } from '../../../environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class TaskService {
+export class UserAuthenticationService {
 
   constructor(private http: HttpClient) { }
 
-  getTasks() {
+  authenticateCredentials(email, password) {
     return new Promise((resolve, reject) => {
-      this.http.get(environment.stdlib_url + '/tasks').subscribe(data => {
+      this.http.get(environment.stdlib_url + '?email=' + email + '&password=' + password + '&type=login').subscribe(data => {
         resolve(data);
       });
     });
   }
 
-  getAssignedTasks(userId) {
+  registerUser(email, password) {
     return new Promise((resolve, reject) => {
-      this.http.get(environment.stdlib_url + '?userId=' + userId + '/tasks').subscribe(data => {
+      this.http.get(environment.stdlib_url + '?email=' + email + '&password=' + password + '&type=register').subscribe(data => {
         resolve(data);
       });
     });

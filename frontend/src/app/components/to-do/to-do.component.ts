@@ -15,26 +15,11 @@ export class ToDoComponent implements OnInit {
   unassignedTasks = [];
 
   constructor(private taskService: TaskService) {
-    this.taskService.getAssignedTasks().then((res) => {
+    /*this.taskService.getAssignedTasks().then((res) => {
       for (var i = 0; res[i] != undefined; i++) {
         this.assignedTasks.push(res[i]);
       }
-    });
-    this.taskService.getDoneTasks().then((res) => {
-      for (var i = 0; res[i] != undefined; i++) {
-        this.doneTasks.push(res[i]);
-      }
-    });
-    this.taskService.getInProgressTasks().then((res) => {
-      for (var i = 0; res[i] != undefined; i++) {
-        this.inProgressTasks.push(res[i]);
-      }
-    });
-    this.taskService.getUnassignedTasks().then((res) => {
-      for (var i = 0; res[i] != undefined; i++) {
-        this.unassignedTasks.push(res[i]);
-      }
-    });
+    });*/
   }
 
   ngOnInit() {

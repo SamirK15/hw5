@@ -12,6 +12,7 @@ import { SignInComponent } from './components/sign-in/sign-in.component';
 import { ToDoComponent } from './components/to-do/to-do.component';
 
 import { TaskService } from './services/task/task.service';
+import { UserAuthenticationService } from './services/user-authentication/user-authentication.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { TaskService } from './services/task/task.service';
     HttpClientModule
   ],
   providers: [
-    TaskService
+    TaskService,
+    UserAuthenticationService
   ],
   bootstrap: [AppComponent]
 })
