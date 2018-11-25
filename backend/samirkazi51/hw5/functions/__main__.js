@@ -23,8 +23,12 @@ module.exports = async (email = '', password,type) => {
 
   if (type === "register"){
     return firebase.auth().createUserWithEmailAndPassword(email, password).then( function(res){
-      
-      return firebase.auth().currentUser;
+      const uIdResponse = { userId: firebase.auth().currentUser.uid }
+      firebase.database().ref('users/' + uIdResponse.userId).set({
+        email: email
+      });
+      return (uIdResponse);
+      return 'You are now registered';
     }).catch(function(error) {
       var errorCode = error.code
       var errorMessage = error.message
@@ -36,10 +40,7 @@ module.exports = async (email = '', password,type) => {
      })
   }
   if (type === "login"){
-    return firebase.auth().signInWithEmailAndPassword(email, password).then(function(res){
-      user = firebase.auth().currentUser
-      console.log(user)    
-    }).catch(function(error) {
+    return firebase.auth().signInWithEmailAndPassword(email, password).then( function(res){}).catch(function(error) {
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
