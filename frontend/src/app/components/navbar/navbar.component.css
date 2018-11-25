@@ -5,7 +5,6 @@
     padding-bottom:5px;
 }
 
-
 .navbar-brand{
     font-size: 22px;
     color: #ffffff;
@@ -19,6 +18,10 @@
     font-weight: bold;
 }
 
+#navlinks{
+    font-size: 22px;
+    color: #ffffff;
+}
 .navbar-nav li a:visited{
     color: #ffffff !important;
 }
