@@ -3,21 +3,26 @@
     font-family: 'Montserrat'; font-size: 22px; color:#0facf3;
     border: 0;
     padding-bottom:5px;
-}  
+}
 
 .navbar-brand{
     font-size: 22px;
     color: #ffffff;
-    text-align: center;
+    text-align: right;
 }
 
 .navbar-nav li a:hover{
     color:#ffffff !important;
     border-bottom: 2px solid #0facf3;
-    text-decoration: none; 
+    text-decoration: none;
     font-weight: bold;
 }
 
+#navlinks{
+    font-size: 22px;
+    color: #ffffff;
+}
 .navbar-nav li a:visited{
     color: #ffffff !important;
 }
+

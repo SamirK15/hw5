@@ -1,6 +1,6 @@
 .jumbotron{
     color: white; 
-    background-image: url('../../../assets/hero_img.jpg');
+    background-image: url('https://lh3.googleusercontent.com/O11jSgsd2ZyPRRgLmBiCOAfdTubCAuM9QJpATjiU0-XXuWIRHweU58sn6gpybwjypNlhsGn4NgAiZbna5SfX8Pn-0XOzEuOUkKU6Cuii85u-QGhc7SnMi_-kBf9dZo8RLRY75l5vYKOBhw-9kiTEdLPGXiYZYMHYGIIZyD__J-qeESY0vwT6kfqETfJeP2PYRG7vvgXIhqqWMIo2IXeuQJW-hsh9K_01HnVQD-AXqm4n77PZjDYM9Nql48zdZUWXm7eJ9r0U68GFNptrF7DUmYvVw6McRCUGNIyF9YZhxIMc5Lf0Ro6sywVDKoBtuud0b1S-Lteog6JJMMofoYeWvUfIz3ioFhZtF756wEAXxoNzGXmX2gg6QTadI1VkpyqWml31AJrS252OMKjNuWB2Egr-JOGSj99ZCGyVR7dCnbmEI9WU5brNOqY7roVTmUEV-t1DbFi89TTrM5OmyJkgmJvRYPMAJ1QxH6xvCGdV8Iy62OmUgevgYyNS5vu7hY1oHID5J5HSJnUsBSxk_0Cm9Sd4B0j5ma4CAxA_-jMVADBBj0GOCqEN8b_AoYEeqB24kzo6_yJ2i65QN07QTGLxtyCSZRTtJ6YP7wnnUaMrmUa-5Brnu70bhQWw0m8OpyJNlq46TFdWGUh0m37pWPMB6F4X=w1265-h843-no');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -66,4 +66,36 @@
     width: 80px;
     height: 80px;
     opacity: 0.7;
+}
+
+#chooseRow{
+    font-family:'Roboto'; font-size: 50px;
+    text-align:center;
+}
+
+#offer{
+    padding-bottom:3%;
+    font-family: 'Roboto'; font-size: 48px;
+    text-align:center;
+}
+
+#underChooseRow{
+    padding-top:30px;
+    font-family: 'Roboto'; font-size: 20px;
+    text-align:center;
+}
+
+#message{
+    padding-top:9px;
+    font-family: 'Roboto'; font-size: 20px;
+    text-align: center;
+}
+#imageCSS{
+    font-family: 'Roboto'; font-size: 20px;
+    text-align: center;
+}
+
+#btnRegister{
+    font-family:'Roboto'; font-size: 22px;
+    border-radius:12px;
 }

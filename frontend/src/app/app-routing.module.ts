@@ -6,13 +6,15 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { ToDoComponent } from './components/to-do/to-do.component';
+import {ControlPanelComponent} from "./components/control-panel/control-panel.component";
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'home-page', component: HomePageComponent },
   { path: 'sign-in', component: SignInComponent },
   { path: 'sign-up', component: SignUpComponent },
-  { path: 'to-do', component: ToDoComponent }
+  { path: 'to-do', component: ToDoComponent },
+  {path: 'control-panel', component: ControlPanelComponent}
 ];
 
 @NgModule({

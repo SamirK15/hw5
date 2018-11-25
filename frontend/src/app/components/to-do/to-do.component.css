@@ -18,12 +18,17 @@ li {
 .col {
     border-style: solid;
 }*/
+
 body, html
 {
   display: table;
   width: 100% !important;
   height: 100% !important;
   min-height: 100%;
+
+  padding-top: 0px;
+  vertical-align: top;
+
 }
 
 body
@@ -55,6 +60,8 @@ h2
   color: #595e75;
   border-bottom: 3px solid #595e75;
 }
+
+
 
 a
 {
@@ -218,7 +225,7 @@ div#left-content div#lists-names
 
 div#left-content div#lists-names div#lists-container
 {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 div#left-content div#lists-names div#lists-container div.list,
@@ -243,7 +250,7 @@ div#tasks-list-container ul#tasks-list  div.status
   position: absolute;
   right: 10px;
   top: 50%;
-  margin-top: -10px;
+  margin-top: -18px;
   padding: 5px 10px;
   color: #FFF;
   text-align: center;
@@ -291,6 +298,7 @@ div#main-content header div.list-actions
 
 }
 
+
 div#main-content header div.list-actions
 {
   float: right;
@@ -299,13 +307,15 @@ div#main-content header div.list-actions
 div#main-content div#new-task div#new-task-form
 {
 
-  width: 75%;
+  width: 50%;
   display: table;
 
 }
 
+
 div#main-content div#new-task div#new-task-form div
 {
+  margin: fill;
   display: table-cell;
 }
 
@@ -314,7 +324,7 @@ div#main-content div#new-task div#new-task-form div
   padding-top: 10px;
   text-align-all: right;
   size: auto;
-  
+
 }
 
 
@@ -380,6 +390,7 @@ div#tasks-list-container ul#tasks-list  div.status.done
   background-color: #45b7af;
 }
 
+
 div#tasks-list-container div#tasks-list-actions
 {
   padding: 20px 0;
@@ -397,4 +408,5 @@ div#tasks-list-container div#tasks-list-actions
   color: white;
 
 }
+
 

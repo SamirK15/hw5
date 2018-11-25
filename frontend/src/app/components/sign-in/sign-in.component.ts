@@ -19,7 +19,7 @@ export class SignInComponent implements OnInit {
 
   signInOnClick(email, password) {
     this.userAuthenticationService.authenticateCredentials(email, password).then(res => {
-      this.router.navigateByUrl("/home-page");
+      this.router.navigateByUrl("/to-do");
     });
   }
 

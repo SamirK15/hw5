@@ -1,104 +1,73 @@
-<div class="modal fade" id="logInModal" role="dialog">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header" style="padding:35px 50px;">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
-          </div>
-          <div class="modal-body" style="padding:40px 50px;">
-            <form role="form">
-              <div class="form-group">
-                <label for="usrname"><span class="glyphicon glyphicon-user"></span> E-mail</label>
-                <input type="text" class="form-control" id="usrname" placeholder="Enter email">
-              </div>
-              <div class="form-group">
-                <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-                <input type="text" class="form-control" id="psw" placeholder="Enter password">
-              </div>
-              <div class="checkbox">
-                <label><input type="checkbox" value="" checked>Remember me</label>
-              </div>
-                <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <p>Not a member? <a href="#">Sign Up</a></p>
-            <p>Forgot <a href="#">Password?</a></p>
-          </div>
-        </div>
-  </div>
-</div>
-
-<div class="modal fade" id="signInModal" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header" style="padding:20px 50px;">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4>Sign Up</h4>
-            </div>
-            <div class="modal-body" style="padding:20px 50px;">
-              <form role="form">
-                <div class="form-group">
-                  <label for="firstName"><span class="glyphicon glyphicon-user"></span> First Name</label>
-                  <input type="text" class="form-control" id="firstName" placeholder="John">
-                </div>
-                <div class="form-group">
-                  <label for="lastName"><span class="glyphicon glyphicon-user"></span> Last Name</label>
-                  <input type="text" class="form-control" id="lastName" placeholder="Doe">
-                </div>
-                <div class="form-group">
-                  <label for="userEmail"><span class="glyphicon glyphicon-envelope"></span> E-mail</label>
-                  <input type="text" class="form-control" id="userEmail" placeholder="Enter E-mail Address">
-                </div>
-                <div class="form-group">
-                  <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-                  <input type="text" class="form-control" id="psw" placeholder="Enter Password">
-                </div>
-                  <button id="submitBtn"type="submit" class="btn btn-block">Login</button>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <p>Forgot <a href="#">Password?</a></p>
-            </div>
-          </div>
-    </div>
-  </div>
-
 <div class="jumbotron jumbotron-fluid">
-<div class="container">
-  <h1 class="display-4">Simplify all your everyday tasks simply and fluidly.</h1>
+  <div class="container">
+    <h1 class="display-4">Simplify all your everyday tasks simply and fluidly.</h1>
+  </div>
 </div>
+
+<div class="row" id="chooseRow">
+  <div class="col">
+    Why Choose Us?
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6" id="underChooseRow">
+      We are new and we are different our task managing app is like no other we go above and beyond in making sure you
+      always meet your daily goals, we use the latest web technologies and communication technologies to deliver the best
+      experience possible for our customers.
+    </div>
+    <div class="col-md-6">
+        <img src='../../../assets/womanPhone.jpeg' class="center" width="475" vspace="10">
+      </div>
+  </div>
 </div>
 
 <div class="container-fluid">
-<div class="row">
-  <div class="col-md-6">
-    <img src='../../../assets/task_pic.png' class="center" width="475" vspace="50">
+  <div class="row">
+    <div class="col-md-6">
+      <img src='../../../assets/task_pic.png' class="center" width="475" vspace="50">
+    </div>
+    <div class="col-md-6">
+      <h1>Task Titan helps you to stay organized individually, or with a group.</h1>
+      <p style="padding-top:5px">Never forget to do chores, projects and homework again. With Task Titan, it's never been more easy to communicate and collaborate.</p>
+    </div>
   </div>
-  <div class="col-md-6">
-    <h1>HW5 Project helps you to stay organized individually, or with a group.</h1>
-    <p>Never forget to do chores, projects and homework again. With Name, it's never been more easy to communicate and collaborate.</p>
-  </div>
-</div>
 </div>
 
-<div class="container-fluid text-center">
-  <h3>What we Offer</h3>
+<div class="row" id="offer">
+  <div class="col">
+    Our Services
+  </div>
 </div>
 
 <div class="container text-center">
+  <div class="row">
+    <div class="col-sm-4" id="message">
+      <img src="../../../assets/messagePic.jpeg" class="img-thumbnail"> Seamless Messaging
+    </div>
+    <div class="col-sm-4" id="imageCSS">
+      <img src="../../../assets/calendar.jpeg" class="img-thumbnail"> Schedule tasks and assign priority
+    </div>
+    <div class="col-sm-4" id="imageCSS">
+      <img src="../../../assets/group.jpeg" class="img-thumbnail"> Group Creation
+    </div>
+  </div>
+</div>
+
+<!-- Spacing -->
 <div class="row">
-  <div class="col-sm-4">
-    <img src="../../../assets/messagePic.jpeg" class="img-thumbnail"> 
-    <h2>Seamless Messaging</h2> 
-  </div>
-  <div class="col-sm-4">
-    <img src="../../../assets/calendar.jpeg" class="img-thumbnail">
-    <h2>Schedule tasks and assign priority</h2>
-  </div>
-  <div class="col-sm-4">
-    <img src="../../../assets/group.jpeg" class="img-thumbnail">
-    <h2>Group Creation</h2>
+  <div class="col-xs-12" style="height:50px;"></div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12 text-center">
+    <button type="button" class="btn btn-dark" id="btnRegister"><a routerLink="sign-up">Get Started - It's free</a></button>
   </div>
 </div>
-</div>
+
+<!-- Spacing -->
+<div class="row">
+    <div class="col-xs-12" style="height:100px;"></div>
+  </div>
+
