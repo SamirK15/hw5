@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 import { TaskService } from '../.././services/task/task.service';
 
@@ -9,20 +9,34 @@ import { TaskService } from '../.././services/task/task.service';
 })
 export class ToDoComponent implements OnInit {
 
-  assignedTasks = [];
-  doneTasks = [];
-  inProgressTasks = [];
-  unassignedTasks = [];
 
-  constructor(private taskService: TaskService) {
-    /*this.taskService.getAssignedTasks().then((res) => {
-      for (var i = 0; res[i] != undefined; i++) {
-        this.assignedTasks.push(res[i]);
-      }
-    });*/
+  heroes=[];
+
+  onClick(value:string){
+    if(value) {
+      this.heroes.push(value);
+    }
   }
 
   ngOnInit() {
+
   }
 
 }
+
+
+/*assignedTasks = [];
+  doneTasks = [];
+  inProgressTasks = [];
+  unassignedTasks = [];*/
+
+
+
+
+/*constructor(private taskService: TaskService) {
+  this.taskService.getAssignedTasks().then((res) => {
+    for (var i = 0; res[i] != undefined; i++) {
+      this.assignedTasks.push(res[i]);
+    }
+  });
+}*/
