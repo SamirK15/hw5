@@ -9,7 +9,7 @@
 
 .jumbotron h1{
     text-align: center;
-    text-shadow: 2px 1px #1b1b1b;
+    text-shadow: 1px 1px #333;
     padding-top: 12%;
     padding-left: 10%;
     padding-right: 10%;
@@ -66,4 +66,36 @@
     width: 80px;
     height: 80px;
     opacity: 0.7;
+}
+
+#chooseRow{
+    font-family:'Roboto'; font-size: 50px;
+    text-align:center;
+}
+
+#offer{
+    padding-bottom:3%;
+    font-family: 'Roboto'; font-size: 48px;
+    text-align:center;
+}
+
+#underChooseRow{
+    padding-top:30px;
+    font-family: 'Roboto'; font-size: 20px;
+    text-align:center;
+}
+
+#message{
+    padding-top:9px;
+    font-family: 'Roboto'; font-size: 20px;
+    text-align: center;
+}
+#imageCSS{
+    font-family: 'Roboto'; font-size: 20px;
+    text-align: center;
+}
+
+#btnRegister{
+    font-family:'Roboto'; font-size: 22px;
+    border-radius:12px;
 }
