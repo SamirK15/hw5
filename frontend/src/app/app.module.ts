@@ -13,6 +13,7 @@ import { ToDoComponent } from './components/to-do/to-do.component';
 
 import { TaskService } from './services/task/task.service';
 import { UserAuthenticationService } from './services/user-authentication/user-authentication.service';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { UserAuthenticationService } from './services/user-authentication/user-a
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     TaskService,
