@@ -14,6 +14,7 @@ import { ToDoComponent } from './components/to-do/to-do.component';
 import { TaskService } from './services/task/task.service';
 import { UserAuthenticationService } from './services/user-authentication/user-authentication.service';
 import {FormsModule} from "@angular/forms";
+import { ControlPanelComponent } from './components/control-panel/control-panel.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {FormsModule} from "@angular/forms";
     NavbarComponent,
     SignUpComponent,
     SignInComponent,
-    ToDoComponent
+    ToDoComponent,
+    ControlPanelComponent
   ],
   imports: [
     BrowserModule,
