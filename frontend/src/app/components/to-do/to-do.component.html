@@ -42,35 +42,34 @@
 <div id="left-content">
   <div id="user-panel">
     <div class="avatar">
-      <img src="../../../assets/baseline_account_circle_black_36dp.png" alt="Avatar" style="size: portrait" align="middle"/>
+      <img src="../../../assets/20181114_152636_HDR.jpg" alt="Avatar" style="size: portrait" align="middle"/>
     </div>
     <div class="welcome">
       <span>Welcome</span>
       <br/>
-      <span class="username">User</span>
+      <span class="username">Salman</span>
     </div>
     <div class="logout">
-      <a href=""><img src="" alt="Logout"/></a>
+      <a href=""><img src="../../../assets/baseline_directions_run_black_36dp.png" alt="Logout"/></a>
     </div>
   </div>
   <div id="lists-names">
-    <a href="#"class="button">Create New Group</a>
+
+    <div id="create_group"><a input type="submit" name="gCreate" class="button" value="Create New Group" (click)="gCreate()">Create New Group</a></div>
     <i class="material-icons">group_add</i>
-    <a href="#"class="button">Add New Member</a>
+    <div id="add_member"><a input type="submit" name="aMem" class="button" value="Add New Member" (click)="aMem()">Add New Member</a></div>
     <i class="material-icons">person_add</i>
-    <a href="#"class="button">Admin Controls</a>
+    <div id="add_controls"><a  input type="submit" name="aControls" class="button" value="Admin Controls" (click)="aControls()">Admin Controls</a></div>
     <i class="material-icons">account_circle</i>
     <div id="lists-container">
-      <a href="#">
+      <a href="#"*ngFor="let group of groups">
         <div class="list">
-          <div class="name">HouseMates</div>
-          <div class="remaining">5</div>
-        </div>
-      </a>
-      <a href="#">
-        <div class="list">
-          <div class="name">Hackathon Group</div>
-          <div class="remaining">23</div>
+          <ul>
+            <li>
+              <div class="name"><b>{{group}}</b></div>
+              <div class="remaining">0</div>
+            </li>
+          </ul>
         </div>
       </a>
     </div>
@@ -87,26 +86,36 @@
     </div>
   </header>
   <div id="new-task">
-    <form method="post" action="#">
-      <div id="new-task-form">
-        <div><input #taskname type="text" name="task-name" placeholder="Enter your new task..." /></div>
-        <div ><input type="submit" name="action-task-add" class="button" value="Add Task"(click)="onClick(taskname.value)"/></div>
-      </div>
-    </form>
+    <div class="container">
+      <form method="post" action="#">
+        <div id="new-task-form">
+          <div id="textField"><input #taskname type="text" name="task-name" placeholder="Enter your new task..."/></div>
+          <div id="taskButton"><input type="submit" name="action-task-add" class="button" value="Add Task"
+                                      (click)="onClick(taskname.value,taskDate.value,taskTime.value)"/>
+            <form>Select A Time<input #taskTime type="time" name="usr_name"></form>
+            <form> Enter a Date<input #taskDate type="month" name="dueMonth"></form>
+          </div>
+        </div>
+      </form>
+    </div>
   </div>
   <div id="tasks-list-container">
     <form method="post" action="">
       <ul id="tasks-list">
         <li>
-         <!-- <div class="status">To Do</div>
-          <input class="check-status" type="checkbox" name="task[]" />-->
-        <ul><li *ngFor="let hero of heroes"><div class="status">To Do</div>
-          <input class="check-status" type="checkbox" name="task[]" />{{hero}}</li></ul>
+          <!-- <div class="status">To Do</div>
+           <input class="check-status" type="checkbox" name="task[]" />-->
+          <ul>
+            <li *ngFor="let hero of heroes">
+              <div class="status">To Do</div>
+              <input class="check-status" type="checkbox" name="task[]"/><b>{{hero}}</b>
+            </li>
+          </ul>
         </li>
         <li>
-         <!-- <div class="status done">Done</div>
-          <input class="check-status" type="checkbox" name="task[]" />
-          <span>Show the world my HTML and CSS</span>-->
+          <!-- <div class="status done">Done</div>
+           <input class="check-status" type="checkbox" name="task[]" />
+           <span>Show the world my HTML and CSS</span>-->
         </li>
       </ul>
       <div id="tasks-list-actions">
